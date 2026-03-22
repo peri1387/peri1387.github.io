@@ -3,7 +3,7 @@
 Welcome to my professional portfolio repository. This site serves as a central hub to showcase my journey from **Business Management** and **Mathematics** to **Data Analysis** and **Software Engineering**.
 
 ## 🌐 Live Demo
-You can view the live website here: [https://peri1387.github.io/](https://peri1387.github.io/)
+You can view the live website here: https://peri1387.github.io/
 
 ## 🚀 About Me
 * **Current Focus:** Software Engineering Student & Aspiring Data Analyst.
