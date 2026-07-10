@@ -402,6 +402,39 @@
     }
     .project-link:hover { color: var(--accent); }
 
+    /* ── FEATURED (THESIS) CARD — full-width row ─────────── */
+    .project-card.featured-wide {
+      grid-column: 1 / -1;
+      flex-direction: row;
+    }
+    .project-card.featured-wide .project-img {
+      width: 260px;
+      height: auto;
+      flex-shrink: 0;
+    }
+    .project-card.featured-wide .project-body {
+      padding: 1.2rem 1.6rem;
+    }
+    .project-card.featured-wide .project-desc {
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      margin-bottom: 1rem;
+    }
+    .project-card.featured-wide .project-tags {
+      margin-bottom: 0.9rem;
+    }
+    @media (max-width: 680px) {
+      .project-card.featured-wide {
+        flex-direction: column;
+      }
+      .project-card.featured-wide .project-img {
+        width: 100%;
+        height: 170px;
+      }
+    }
+
     /* ── CONTACT ─────────────────────────────────────────── */
     #contact { background: var(--bg); }
     .contact-grid {
@@ -719,27 +752,7 @@
           <div class="bar-track"><div class="bar-fill blue" style="--w:0.80"></div></div>
         </div>
       </div>
-<!--
-      <div class="skill-group reveal">
-        <div class="skill-group-title">Dev &amp; Tools</div>
-        <div class="skill-bar">
-          <div class="skill-bar-top"><span class="skill-name-text">Git &amp; GitHub</span><span class="skill-pct">80%</span></div>
-          <div class="bar-track"><div class="bar-fill yellow" style="--w:0.80"></div></div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill-bar-top"><span class="skill-name-text">C# / .NET</span><span class="skill-pct">55%</span></div>
-          <div class="bar-track"><div class="bar-fill yellow" style="--w:0.55"></div></div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill-bar-top"><span class="skill-name-text">HTML / CSS</span><span class="skill-pct">70%</span></div>
-          <div class="bar-track"><div class="bar-fill yellow" style="--w:0.70"></div></div>
-        </div>
-        <div class="skill-bar">
-          <div class="skill-bar-top"><span class="skill-name-text">VS Code / Linux basics</span><span class="skill-pct">75%</span></div>
-          <div class="bar-track"><div class="bar-fill yellow" style="--w:0.75"></div></div>
-        </div>
-      </div>
-    -->
+
       <div class="skill-group reveal">
         <div class="skill-group-title">Certifications</div>
         <div class="cert-badges">
@@ -903,7 +916,7 @@
       </div>
 
       <!-- 7 (Academic Research / Thesis) -->
-      <div id="research" class="project-card reveal" style="border: 1px solid var(--accent-color, #3498db); box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);">
+      <div id="research" class="project-card featured-wide reveal" style="border: 1px solid var(--accent-color, #3498db); box-shadow: 0 4px 15px rgba(52, 152, 219, 0.15);">
         <div class="project-img">
           <img src="images/thumbs/Front_page.png" alt="Sports Analytics Thesis" loading="lazy" />
           <span class="wip-tag" style="background-color: var(--accent-color, #3498db); color: #fff;">Thesis</span>
